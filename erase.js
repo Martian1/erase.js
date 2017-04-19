@@ -21,7 +21,7 @@ var erase = function (id){
 
     function eventMove(e){
     	e.preventDefault();
-        if(mousedown) {console.log(e);
+        if(mousedown) {
             if(e.changedTouches){
                 e=e.changedTouches[e.changedTouches.length-1];
             }
