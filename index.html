@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+    .container{
+        width: 200px;
+        height: 50px;
+        background-color: #a7a7a7;
+        position: relative;
+    }
+    .content{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    canvas
+    {
+        z-index: 100;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="canvas" width="200" height="50"></canvas>
+        <div class="content">hello world</div>
+    </div>
+    <script type="text/javascript" src='erase.js'></script>
+    <script type="text/javascript">
+    erase('canvas');
+    </script>
+</body>
+
+</html> 
